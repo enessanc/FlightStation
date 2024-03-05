@@ -1,0 +1,3 @@
+add_subdirectory(FSClient)
+add_subdirectory(PX4Controller)
+add_subdirectory(VideoStreamer)

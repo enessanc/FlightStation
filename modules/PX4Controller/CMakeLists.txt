@@ -1,0 +1,17 @@
+set(TEST_PX4Controller OFF)
+
+add_library(PX4Controller
+        STATIC
+        #Headers
+        include/PX4Controller/PX4Controller.h
+        #Implementations
+        impl/PX4Controller.cpp
+)
+
+target_include_directories(PX4Controller PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}/include)
+target_link_libraries(PX4Controller PUBLIC TSML)
+
+if(TEST_PX4Controller)
+    add_subdirectory(test)
+endif()
