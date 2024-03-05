@@ -1,0 +1,6 @@
+[submodule "external/TSML"]
+	path = external/TSML
+	url = git@github.com:enessanc/TSML.git
+[submodule "external/NL"]
+	path = external/NL
+	url = git@github.com:enessanc/NL.git
