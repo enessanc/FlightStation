@@ -4,3 +4,6 @@
 [submodule "external/NL"]
 	path = external/NL
 	url = git@github.com:enessanc/NL.git
+[submodule "external/FGSCommon"]
+	path = external/FGSCommon
+	url = git@github.com:enessanc/FGSCommon.git
