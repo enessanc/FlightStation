@@ -1,5 +1,7 @@
 echo "The setup phase for FESA softwares are beginning."
 
+sudo apt install build-essential
+
 echo "Trying to download OpenCV"
 sudo apt install libopencv-dev
 
