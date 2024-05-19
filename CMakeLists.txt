@@ -6,6 +6,7 @@ set(TEST_SUBMODULES OFF)
 set(TEST_FS OFF)
 
 add_subdirectory(external/GStreamer)
+add_subdirectory(external/FGSCommon)
 add_subdirectory(external/TSML)
 add_subdirectory(external/NL)
 
