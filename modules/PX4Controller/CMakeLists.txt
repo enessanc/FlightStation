@@ -4,10 +4,8 @@ add_library(PX4Controller
         STATIC
         #Headers
         include/PX4Controller/PX4Controller.h
-        include/PX4Controller/CoordTranformer.h
         #Implementations
         impl/PX4Controller.cpp
-        impl/CoordLocalizer.cpp
 )
 
 target_include_directories(PX4Controller PUBLIC

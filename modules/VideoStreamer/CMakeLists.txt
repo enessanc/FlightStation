@@ -1,5 +1,7 @@
 set(TEST_VideoStreamer OFF)
 
+find_package(OpenCV REQUIRED)
+
 add_library(VideoStreamer
         STATIC
         #Headers
@@ -8,11 +10,9 @@ add_library(VideoStreamer
         impl/VideoStreamer.cpp
 )
 
-target_include_directories(VideoStreamer PUBLIC
-        ${CMAKE_CURRENT_LIST_DIR}/include)
+target_include_directories(VideoStreamer PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include ${OpenCV_INCLUDE_DIRS})
 
-target_link_libraries(VideoStreamer
-        PUBLIC TSML GStreamerInterface)
+target_link_libraries(VideoStreamer PUBLIC TSML GStreamerInterface FGSCommon ${OpenCV_LIBS})
 
 if(TEST_VideoStreamer)
     add_subdirectory(test)
