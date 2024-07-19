@@ -15,7 +15,7 @@ namespace FS
 
     void VideoStreamer::OnInitialize()
     {
-        video_capturer.open("/home/andalzo/CLionProjects/FlightStation/data/Serenity.mp4");
+        video_capturer.open("/home/andalzo/CLionProjects/FlightStation/data/testVideo.mp4");
         //Note: For webcam or camera connection video_capturer.open(0, cv::CAP_V4L2) worked for me
 
         if(!video_capturer.isOpened())
