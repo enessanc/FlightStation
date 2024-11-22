@@ -9,14 +9,15 @@ and the system design is nearly complete.
 from the ground station. It facilitates communication with the Pixhawk controller, processes raw camera outputs through a deep learning model, and streams as well as saves the 
 processed video using efficient compression protocols such as H.264 and H.265.
 
-  This software was built on TSML (Thread Safe Messaging Library), a generic library that I developed. Additionally, to simplify the development process and ensure the software's modularity, 
-I implemented a modular CMake system. With this system, each module can be built separately and tested independently.
+  This software was built on TSML (Thread Safe Messaging Library), a generic library that I developed. This library provides a modular way to communicate between independent threads and manage the lifecycle of that thread (starting, looping, exception handling nad finishing).
+  
+  Additionally, to simplify the development process and ensure the software's modularity, I implemented a modular CMake system. With this system, each module can be built separately and tested independently.
 
   During the development process, I focused on creating clear and maintainable code. To achieve this, we adhered to SOLID principles and incorporated design patterns where appropriate, 
 avoiding unnecessary overengineering. This approach not only streamlined development but also significantly enhanced our skills and understanding throughout the project.
 
 ## FESA Avionic System Design
-## FESA System Design
-### FlightStation Module: A
-### FlightStation Module: B
-### FlightStation Module: C
+## FESA Sofware System Design
+### FSClient Module System Design
+### PX4Controller Module System Design
+### VideoStreaner Module System Design
