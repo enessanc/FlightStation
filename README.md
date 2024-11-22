@@ -9,7 +9,7 @@ and the system design is nearly complete.
 from the ground station. It facilitates communication with the Pixhawk controller, processes raw camera outputs through a deep learning model, and streams as well as saves the 
 processed video using efficient compression protocols such as H.264 and H.265.
 
-  This software was built on TSML (Thread Safe Messaging Library), a generic library that I developed. This library provides a modular way to communicate between independent threads and manage the lifecycle of that thread (starting, looping, exception handling nad finishing).
+  This software was built on [TSML](https://github.com/enessanc/TSML), a generic library that I developed. This library provides a modular way to communicate between independent threads and manage the lifecycle of that thread (starting, looping, exception handling nad finishing). Also this software uses a TCP multi client-one server networking library named [NL](https://github.com/enessanc/NL) , which is also developed by me by using asio library from boost framework. 
   
   Additionally, to simplify the development process and ensure the software's modularity, I implemented a modular CMake system. With this system, each module can be built separately and tested independently.
 
