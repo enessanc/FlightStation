@@ -16,11 +16,3 @@ processed video using efficient compression protocols such as H.264 and H.265.
 
   During the development process, I focused on creating clear and maintainable code. To achieve this, I adhered to SOLID principles and incorporated design patterns where appropriate, 
 avoiding unnecessary overengineering. This approach not only streamlined development but also significantly enhanced our skills and understanding throughout the project.
-
-## FESA Avionic System Design
-
-## FESA Sofware System Design
-
-### FSClient Module System Design
-### PX4Controller Module System Design
-### VideoStreaner Module System Design
